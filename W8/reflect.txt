@@ -1,0 +1,22 @@
+Woohyuk Kim
+Student#: 121968176
+Date: 30/03/2018
+
+1
+An abstract base class is a class that contains or inherits at least one pure virtual function while any class that does not have any abstract methods is concrete.
+
+2
+bool credit(double);
+bool debit(double);
+void monthEnd();
+void display(std::ostream&) const;
+
+3
+In completing this workshop, I learned how to make use of virtual functions. To be specific, I learned how to define virtual functions, and code an abstract base classes containing these abstract methods.
+
+Quiz 7 Reflection:
+Q1 Wrong: BBBB -> Correct: BAAA
+Q2 Correct: A*
+Q3 Correct: pointer
+Q6 Correct: Concrete
+

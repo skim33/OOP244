@@ -1,0 +1,18 @@
+Student Name: Woohyuk Kim
+Student #: 121968176
+Email: wkim33@myseneca.ca
+Date: 09/02/2018
+
+Reflection:
+1
+Both can store 40 elements, which take up exactly 40 bytes of memories because it is declared that both family and given names are stored in arrays of size [max_name_length], in the header file. The max_name_length is defined as 40 in the header file as well.
+
+2
+Function overloading is the feature of C++ that allows a class to declare member functions that have same name. Based on the identifiers and parameter list combination of the functions, the C++ compiler decides which of the function definitions the client function call is connected to.
+
+3
+After finishing workshop 3, I learned how to write code including class. To be specific, I learned how to define a class with data privatized and access to it using public member functions. To conclude, I realized that defining a class is much more useful than simply defining a structure due to a number of advantages such as sub objects being private by default, it offers.
+
+Quiz 2 Reflection:
+None
+

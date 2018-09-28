@@ -1,0 +1,25 @@
+
+Woohyuk Kim
+Student#: 121968176
+Date: 03/15/2018
+
+1
+If self-assignment is neglected, the deallocation statement releases the memory holding the resource data, which would result in a loss of access to the source resource. This is why the check for self-assignment should be done at first.
+
+2
+The use of member functions repeatedly where possible.
+
+3
+Learning outcomes in completing this workshop are as follows:
+
+How a copy constructor works
+How an assignment operator works
+How to implement a deallocation of dynamically allocated memory where necessary
+
+Quiz 5 Reflection:
+Q2. Wrong -> student = new OOP244[n];
+    Correct -> *student;
+
+Q6 b). Wrong -> ptr = nullptr;
+       Correct -> shallow copy the non-resource instance variables to destination variables
+ 

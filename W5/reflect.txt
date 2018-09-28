@@ -1,0 +1,25 @@
+Aurthor: Woohyuk Kim
+Student#: 121968176
+Date: 21/02/2018
+
+Reflection:
+1
+In general, an operator like operator+ whose result is a new value should
+return the new value by value. On the other hand, a modifier operator like
+operator+= should return a reference to the modified value.
+
+2
+a, b, c, d, e
+
+3
+In order to minimize code dupulication, I reused my functions wherever possible.
+For example, whenever validation is needed, I used isEmpty() function. In addtion,
+I also tried to use the ternary operator whenever the conditional operator is needed.
+
+4
+In this workshop, I learned how to make use of operators. To be specific,
+I learned how to overload an operator as a member function of a class. I got to know
+how operators work, which I wasn't very sure about before working on this workshop.
+
+Quiz 4 Reflection:
+None

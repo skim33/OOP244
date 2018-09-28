@@ -1,0 +1,22 @@
+Woohyuk Kim
+Student#: 121968176
+Date: 3/23/2018
+
+1
+No because if data, relation, or whatever actions handled is part of derived classes, it should be handled in the base class without checking the actual type.
+
+2
+Yes. Since a derived class inherits the entire structure of its base class, it should know about the existence of its base class. In order for a member function of a derived class to access the base class version of a member function, scope resolution is used. This is where the word "Hero" appear in the SuperHero.cpp. 
+
+3
+"Ancient Battle!". When a Hero fight a SuperHero, a member function of the base class is used.
+
+4
+True, True	
+
+Quiz 6 Reflection:
+Q2. wrong: data members -> correct: member functions
+Q3. wrong: ACDB -> correct: AACDBB
+Q4. Needed to add two more lines of code ->  Derived b(num) in main function; 
+				        Derived (int num): Base(num);
+ 

@@ -1,0 +1,18 @@
+Reflection:
+1.
+A safe empty state is to ensure an object to have a well defined state from the time of its creation. The object’s instance variables are initialized to be in safe empty states in a constructor. A null state(i.e. nullptr) is one another state that is defined as the empty state.
+
+2.
+By using constructors and member functions of the Passenger class, I was able to minimize code duplication. Whenever a new object is created, I could just use the constructor to initialize it in safe empty state instead of repeating a bunch of code that enables initialization. Similarly, the use of member functions such as isEmpty() can be repeatedly used to validate data whenever is necessary. Thus, these methods enabled me to reduce code duplication.
+
+3.
+Since carTravelWith() is a member function of the Passenger class, it has direct access to the members of its class. However, it is only a query that receives an unmodifiable reference to a Passenger object, which means it can not modify any  data.
+
+4.
+After using strncpy() function, the escape sequence ‘\0’ should be added at the end of the destination array to ensure that it works correctly. The null character is not appended implicicaly if the source array is longer than the maximum number of characters to be copied.
+
+5.
+In workshop 4, I learned how to properly make use of constructors. First thing I learned is how to define an constructor which initialize an object at creation time, and then I learned how to use default constructor to set an object to a safe empty state. Constructor is obviously an important aspect of C++ I must go through. Therefore, this workshop was a good opportunity to learn about it well.
+
+Quiz 3 Reflection:
+None

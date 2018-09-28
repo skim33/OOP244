@@ -1,0 +1,27 @@
+Woohyuk Kim
+Student#: 121968176
+Date: 04/06/2018
+
+1
+If only templated functions are stored in Data.cpp and the template type is not declared, the program will not be complied. Putting all functions lead to multiple definition error.
+
+2
+No. Neither work. The template type must be declared in the header file. 
+
+3
+Yes, it is possible to complete this lab without templates. However, use of templates enables simplicity of code and provides better safety.
+
+4
+Yes
+
+Quiz 8 reflection:
+Q6: int, long, short, char
+Q9:
+template <typename T>
+T& add(T& a, T& b) {
+	return a += b;
+}
+
+
+
+

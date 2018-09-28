@@ -1,0 +1,20 @@
+Student Name: Woohyuk Kim
+Student #: 121968176
+Date: 1/26/2018	
+
+Reflection:
+
+1.
+When writing some code that has a function abc() and there is another library available also having a function named abc(). The compiler doesn’t know which one of abc() functions is referred written the code. A namespace can be used to overcome this issue. It differentiates classes, variables, functions with the same name defined in different libraries.
+
+2.
+There are three main advantages to having header files. First one is that it enables compile time to be faster when writing a reasonable length of code. If every code is in a single file, everything has to be compiled even if only a small change is made. It possibly takes a long time. Second advantage is that it allows users to keep code organized. It obviously makes much easier to find a part of code you want to modify if code is separated into specific files. The last one is that it allows programmers to separate interface from implementation.
+
+3.
+Header files are meant to be included into implementation files. They only contain declarations, and so they have neither harmful nor useful consequences. Header files itself are not fed to the compiler independently as transfer unit, thus they should never be compiled.
+
+4.
+If you include .cpp files in another file, the compiler will try to compile multiple implementations of the same methods, which will create an error. Therefore, .cpp files should not be included in another file.
+
+5.
+One of the things I gained through workshop1 is how to organize code well. To be specific, I learned how to separate modules into header and implementation files, and how to link these files in order to compile successfully. At the same time, I got to experience coding with C++. Things like namespace were what I initially got confused with because I have never seen it before when coding with C. It was an good opportunity to learn these things to some extent in the first workshop. I got used to use visual studio as well.

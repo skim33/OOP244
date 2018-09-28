@@ -1,0 +1,10 @@
+
+In line number 213 of your output:
+The output should be:
+   Yours: 1234   |water               |   1.50|   1|liter     |   5|2018/06/30
+But your output is: 
+   Yours: 1234   |water               |   1.50|   1|liter     |   5|0/00/00
+                                                                    ^
+--------------------------------------------------------------------|
+Professor's character ASCII code: hex(32), dec(50)
+un-matched character ASCII code: hex(30), dec(48)

@@ -1,0 +1,129 @@
+// Workshop 4 - Constructors
+// Passenger.cpp
+// Woohyuk Kim
+// Email: wkim33@myseneca.ca
+// 2/16/2017
+// This file contains function definitions.
+
+// Include necessary headers
+#include<iostream>
+#include<cstring>
+#include"Passenger.h"
+
+using namespace std;
+
+// define namespace sict
+namespace sict {
+	// Implement the default constructor.
+	// This function sets object to a safe empty state.
+	Passenger::Passenger() {
+		*p_name = '\0';
+		*p_destination = '\0';
+		p_year = 0;
+		p_month = 0;
+		p_day = 0;
+	}
+
+	// Implement the constructor with 2 parameters.
+	// This function sets data to objects after validation.
+	Passenger::Passenger(const char *name, const char *destination) {
+		if (name == nullptr || destination == nullptr) {
+			*this = Passenger();
+
+		} else if (*name == '\0' || *destination == '\0'){
+			*this = Passenger();
+
+		} else {
+			strncpy(p_name, name, max_size);
+			p_name[max_size - 1] = '\0';
+			strncpy(p_destination, destination, max_size);
+			p_destination[max_size - 1] = '\0';
+			p_year = 2017;
+			p_month = 7;
+			p_day = 1;
+
+		}
+	}
+
+	// Implement isEmpty query.
+	// This function checks if the objects are in a safe empty state.
+	bool Passenger::isEmpty() const{
+		if (p_name == nullptr || p_destination == nullptr || *p_name == '\0' || *p_destination == '\0') {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	// Implement display query.
+	// This function displays objects.
+	void Passenger:: display() const {
+		if (isEmpty() == false) {
+			cout << p_name << " - " << p_destination << " on " << p_year << "/";
+			cout.fill('0');
+			cout.width(2);
+			cout << p_month << "/";
+			cout.fill('0');
+			cout.width(2);
+			cout << p_day << endl;
+
+		} else {
+			cout << "No passenger!" << endl;
+		}
+	}
+
+	Passenger::Passenger(const char *name, const char *destination, int year, int month, int day) {
+		bool check = true;
+
+		if (name == nullptr || destination == nullptr) {
+			check = false; 
+		} else if (*name == '\0' || *destination == '\0') {
+			check = false;
+		} else if (year < 2017 || year > 2020) {
+			check = false;
+		} else if (month < 1 || month > 12) {
+			check = false;
+		} else if (day < 1 || day > 31) {
+			check = false;
+		} else {
+			check = true;
+		}
+
+		if (check == true) {
+			strncpy(p_name, name, max_size);
+			p_name[max_size - 1] = '\0';
+			strncpy(p_destination, destination, max_size);
+			p_destination[max_size - 1] = '\0';
+			p_year = year;
+			p_month = month;
+			p_day = day;
+
+		} else {
+			*this = Passenger();
+		}
+	}
+
+	const char* Passenger::name() const {
+		return p_name;
+	}
+
+	bool Passenger::canTravelWith(const Passenger &passenger) const {
+		bool check = true;
+		if (passenger.p_year == p_year && passenger.p_month == p_month && passenger.p_day == p_day) {
+			for (int i = 0; i < max_size; i++) {
+				if (passenger.p_destination[i] != p_destination[i]) {
+					check = false;
+				}
+			}
+
+			if (check) {
+				return true;
+			}
+
+			return false;
+		} 
+
+		return false;
+		
+	}
+}
